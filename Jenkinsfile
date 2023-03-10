@@ -15,7 +15,7 @@ pipeline {
           }
         }
 
-        stage('Front-End iUnit test') {
+        stage('package our application') {
           steps {
             sh '''FROM golang:alpine AS build-env
 RUN mkdir /go/src/app && apk update && apk add git
